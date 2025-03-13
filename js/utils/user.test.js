@@ -6,7 +6,7 @@ describe('getUserName function', () => {
   beforeEach(() => {
     localStorage.clear();
   });
-  
+
   afterEach(() => {
     localStorage.clear();
   });
@@ -15,10 +15,10 @@ describe('getUserName function', () => {
     // Arrange: Save a user object to storage
     const mockUser = { name: 'John Doe', email: 'john@example.com' };
     localStorage.setItem('user', JSON.stringify(mockUser));
-    
+
     // Act: Call the function
     const result = getUserName();
-    
+
     // Assert: Verify it returns the correct name
     expect(result).toBe('John Doe');
   });
@@ -26,7 +26,7 @@ describe('getUserName function', () => {
   test('returns null when no user exists in storage', () => {
     // Act: Call the function (with empty localStorage)
     const result = getUserName();
-    
+
     // Assert: Verify it returns null
     expect(result).toBeNull();
   });
