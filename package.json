@@ -2,14 +2,45 @@
   "name": "workflow-repo",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "prepare": "husky install",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "e2e": "npx playwright test",           
+	  "e2e:ui": "npx playwright test --ui",  
+	  "e2e:headed": "npx playwright test --headed",  
+	  "e2e:debug": "npx playwright test --debug",
+    "start": "live-server --port=5500"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "@eslint/js": "^9.22.0",
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "@vitest/browser": "^3.0.8",
+    "@vitest/coverage-v8": "^3.0.8",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "husky": "^8.0.0",
+    "jsdom": "^26.0.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^3.4.12",
+    "vitest": "^3.0.8"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ]
   }
 }
