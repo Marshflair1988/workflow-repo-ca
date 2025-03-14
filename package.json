@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
     "prepare": "husky install",
-    "test:unit": "vitest",
+    "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "e2e": "npx playwright test",           
 	  "e2e:ui": "npx playwright test --ui",  

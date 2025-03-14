@@ -62,16 +62,7 @@ npm test
 Run end-to-end tests:
 
 ```bash
-npm run test:e2e
-```
-
-# Environment Variables
-
-Required environment variables:
-
-```
-TEST_USER_EMAIL=your-test-email@stud.noroff.no
-TEST_USER_PASSWORD=your-test-password
+npm run e2e
 ```
 
 # Code Quality
