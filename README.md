@@ -30,6 +30,8 @@ A venue booking application built with vanilla JavaScript, featuring user authen
 
 ```bash
 git clone [https://github.com/Marshflair1988/workflow-repo-ca.git]
+
+"Remember to navigate to the workflow branch"
 ```
 
 2. Install dependencies:
@@ -38,7 +40,7 @@ git clone [https://github.com/Marshflair1988/workflow-repo-ca.git]
 npm install
 ```
 
-3. Create a `.env` file in the root directory and include these variables:
+3. Create a `.env` file in the root directory if one doesnt already exist and include these variables:
 
 TEST_USER_EMAIL=workflowuser@stud.noroff.no
 TEST_USER_PASSWORD=workflowpass
