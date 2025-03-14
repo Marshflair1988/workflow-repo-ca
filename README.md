@@ -28,7 +28,7 @@ A venue booking application built with vanilla JavaScript, featuring user authen
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone [https://github.com/Marshflair1988/workflow-repo-ca.git]
 ```
 
 2. Install dependencies:
